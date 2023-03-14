@@ -1,0 +1,37 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+} */
+.banner{
+    width: 100%;
+    position: relative;
+
+}
+
+.banner img {
+    width: 100%;
+}
+.container{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+
+.container h1 {
+    font-size: 6rem;
+    color: #696966; 
+}
+
+
+.container p{
+  
+    font-size: 3rem;
+    color: #696966; 
+    margin-top: 10px;
+    
+}
+.container p span{
+    font-weight: bold;
+    color: #30c0e4;
+}
