@@ -11,9 +11,6 @@ export default class search extends Component {
   changetext = (event)=>{
       this.setState({
         text: event.target.value,
-
-
-
       })
   }
   render() {
@@ -22,12 +19,6 @@ export default class search extends Component {
         <p>search what do want</p>
         <input type="text" value={this.state.text} onChange={this.changetext} placeholder='search...'/>
         <span>{this.state.text}</span>
-
-
-
-
-
-
       </div>
     )
   }

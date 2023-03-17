@@ -34,9 +34,11 @@ export default class card extends Component {
       <div className={style.container}>
         <img src={image} alt="bb"/>
         <h3>{name}</h3>
-        <p>{cost}</p>
+        {/* <p>{cost} {count ? `* ${count} = ${count * Number(cost.split(" ")[0])}`: ""}</p> */}
+        <p>{cost} {count ? `* ${count} = ${count * Number(cost.split(" ")[0])}`: ""}</p>
         <div className={style.count}> 
-          <img className={this.state.count ? "" : style.deactive}  src={down} alt='f' onClick={this.downhandler}/>
+          {/* <img className={this.state.count ? "" : style.deactive}  src={down} alt='f' onClick={this.downhandler}/> */}
+          <img className={!this.state.count && style.deactive}  src={down} alt='f' onClick={this.downhandler}/>
           <span>{count}</span>
           <img className={style.countimage} src={up} alt='f' onClick={this.uphandler}/>
         </div>
